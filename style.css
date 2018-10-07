@@ -15,6 +15,7 @@
     grid-auto-rows: minmax(120px,auto);
 
 }
+
  /* Se les da color y propiedades a las cajas para luego asignarles un area
     para hacer el desplazamiento */
 
@@ -24,7 +25,6 @@
     grid-column: 1/4;
     grid-area: caja1;
   
-
 }
 
 .caja2{ 
@@ -32,7 +32,6 @@
     grid-row:2/4;
     grid-area: caja2;
    
-    
 }
 
 .caja3{
@@ -41,7 +40,6 @@
     grid-row:2/4;
     grid-area: caja3;
     
-   
 }
 
 .caja4{
@@ -49,7 +47,6 @@
     grid-row:2/4;
     grid-area: caja4;
    
-
 }
 
 .caja5{
@@ -57,7 +54,6 @@
     grid-column: 1/4;
     grid-area: caja5;
    
-
 }
 
 /* Media */
@@ -75,7 +71,9 @@ no sabía su posición original */
          "caja2 caja3 caja4"
          "caja2 caja3 caja4"
          "caja5 caja5 caja5";
+
     }
+
 }
 
 
@@ -90,5 +88,7 @@ no sabía su posición original */
          "caja3 caja3 caja3"
          "caja4 caja4 caja4"
          "caja5 caja5 caja5";
-    }
+    
+        }
+
 }
