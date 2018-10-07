@@ -56,13 +56,10 @@
 /* Media */
 /*Se utilizaron dos medidas, ya que cuando tenía solo una esta se desarmaba ya que 
 no sabía su posición original */
+/*Cuando la pantalla tiene una medida min de 700 pixeles vuelve a su formato de página wea*/
 
 @media (min-width: 700px) {
     .contenedor {   
-         display: grid;
-         grid-template-columns: 20% auto 160px; 
-         grid-template-rows: repeat(4, 120px);
-         grid-gap: 1rem;
          grid-template-areas: 
          "caja1 caja1 caja1"
          "caja2 caja3 caja4"
@@ -73,12 +70,12 @@ no sabía su posición original */
 
 }
 
+/*Cuando la pantalla tiene un máximo de 700 pixeles se transformará en formato móvil y para eso se crean 5 filas de 120px
+y se reorganizan las cajas*/
 
 @media (max-width: 700px) {
     .contenedor {   
-         display: grid;
-         grid-template-rows: repeat(5, 120px);
-         grid-gap: 1rem;
+         grid-template-rows: repeat(5, 120px); 
          grid-template-areas: 
          "caja1 caja1 caja1"
          "caja2 caja2 caja2"
