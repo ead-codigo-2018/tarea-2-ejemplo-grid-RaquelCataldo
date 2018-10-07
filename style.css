@@ -1,0 +1,94 @@
+/*  Propiedades de las celdas con sus respectivas medidas
+    No tiene fondo de color y esta alineado al centro
+    Entre columnas tiene una separación de 1 em
+    La altura fue dejada a la par con la medida de la primera fila*/
+
+.contenedor{
+    margin-left: auto;
+    margin-right: auto;    
+    max-width: 1140px;
+    height: auto;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: 20% auto 160px;
+    grid-gap: 1em;
+    grid-auto-rows: minmax(120px,auto);
+
+}
+ /* Se les da color y propiedades a las cajas para luego asignarles un area
+    para hacer el desplazamiento */
+
+.caja1{    
+    background: rgb(255,184,162);
+    width: auto;
+    grid-column: 1/4;
+    grid-area: caja1;
+  
+
+}
+
+.caja2{ 
+    background: rgb(182,215,168);
+    grid-row:2/4;
+    grid-area: caja2;
+   
+    
+}
+
+.caja3{
+    background: rgb(255,242,204);
+    width: auto;
+    grid-row:2/4;
+    grid-area: caja3;
+    
+   
+}
+
+.caja4{
+    background: rgb(159,197,232);
+    grid-row:2/4;
+    grid-area: caja4;
+   
+
+}
+
+.caja5{
+    background: rgb(234,209,220);
+    grid-column: 1/4;
+    grid-area: caja5;
+   
+
+}
+
+/* Media */
+/*Se utilizaron dos medidas, ya que cuando tenía solo una esta se desarmaba ya que 
+no sabía su posición original */
+
+@media (min-width: 700px) {
+    .contenedor {   
+         display: grid;
+         grid-template-columns: 20% auto 160px; 
+         grid-template-rows: repeat(4, 120px);
+         grid-gap: 1rem;
+         grid-template-areas: 
+         "caja1 caja1 caja1"
+         "caja2 caja3 caja4"
+         "caja2 caja3 caja4"
+         "caja5 caja5 caja5";
+    }
+}
+
+
+@media (max-width: 700px) {
+    .contenedor {   
+         display: grid;
+         grid-template-rows: repeat(5, 120px);
+         grid-gap: 1rem;
+         grid-template-areas: 
+         "caja1 caja1 caja1"
+         "caja2 caja2 caja2"
+         "caja3 caja3 caja3"
+         "caja4 caja4 caja4"
+         "caja5 caja5 caja5";
+    }
+}
