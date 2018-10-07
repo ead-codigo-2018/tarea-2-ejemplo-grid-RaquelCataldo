@@ -8,7 +8,6 @@
     margin-right: auto;    
     max-width: 1140px;
     height: auto;
-    justify-self: center;
     display: grid;
     grid-template-columns: 20% auto 160px;
     grid-gap: 1em;
@@ -21,7 +20,6 @@
 
 .caja1{    
     background: rgb(255,184,162);
-    width: auto;
     grid-column: 1/4;
     grid-area: caja1;
   
@@ -36,7 +34,6 @@
 
 .caja3{
     background: rgb(255,242,204);
-    width: auto;
     grid-row:2/4;
     grid-area: caja3;
     
