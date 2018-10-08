@@ -12,7 +12,7 @@
     grid-template-columns: 20% auto 160px;
     grid-gap: 1em;
     grid-auto-rows: minmax(120px,auto);
-
+   
 }
 
  /* Se les da color y propiedades a las cajas para luego asignarles un area
@@ -20,40 +20,35 @@
 
 .caja1{    
     background: rgb(255,184,162);
-    grid-column: 1/4;
     grid-area: caja1;
   
 }
 
 .caja2{ 
     background: rgb(182,215,168);
-    grid-row:2/4;
     grid-area: caja2;
    
 }
 
 .caja3{
     background: rgb(255,242,204);
-    grid-row:2/4;
     grid-area: caja3;
     
 }
 
 .caja4{
     background: rgb(159,197,232);
-    grid-row:2/4;
     grid-area: caja4;
    
 }
 
 .caja5{
     background: rgb(234,209,220);
-    grid-column: 1/4;
     grid-area: caja5;
    
 }
 
-/* Media */
+/* Media */ 
 /*Se utilizaron dos medidas, ya que cuando tenía solo una esta se desarmaba ya que 
 no sabía su posición original */
 /*Cuando la pantalla tiene una medida min de 700 pixeles vuelve a su formato de página wea*/
@@ -75,7 +70,6 @@ y se reorganizan las cajas*/
 
 @media (max-width: 700px) {
     .contenedor {   
-         grid-template-rows: repeat(5, 120px); 
          grid-template-areas: 
          "caja1 caja1 caja1"
          "caja2 caja2 caja2"
